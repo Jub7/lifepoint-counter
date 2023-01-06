@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script defer src="controller1.0.js"> 
+</script>
+	<h1 id="playerIndicator">Player 1 selected</h1>
+	<input id="p1Nam" onClick="selectPlayer(1)" placeholder="Player 1" />
+	<input id="p1LifePoints" onClick="selectPlayer(1)" value="8000"/>
+	<br>
+	<input id="p2name" onClick="selectPlayer(2)" placeholder="Player 2" />
+	<input id="p2LifePoints" onClick="selectPlayer(2)" value="8000"/>
+	<br>
+	<button id="subtract" onClick="subLife()">-</button>
+	<input id="addThis" value="500"/>
+	<button id="add" onClick="addLife()">+</button>
+	<br><br>
+	<button id="reset" onClick="resetLife()">Reset</button>
+	<br>
+	
+	<img src="dieroll.gif" width="100"/>	
+	<img src="coinflip.gif" width="50" />
+	<br>
+	<button onClick="roll()">Roll</button>
+	<input id="numberOfDice" value="1" size="1"/>d
+	<input id="numberOfSides" value="6" size="1">
+	<br>
+	<p id="rollResult">Roll result: </p>
+</html>
